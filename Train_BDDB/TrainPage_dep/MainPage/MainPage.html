@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title> Train_BDDB_Main </title>
+
+    <link rel="stylesheet" href="../MainPage/MainPage.css">
+    <link rel="stylesheet" href="../Section/CSS/General.css">
+
+</head>
+
+<body>
+    <!-- header -->
+    <header id="intro">
+        <h1>
+            <ul>
+                <li><a href="../MainPage/MainPage.html"> BDDB </a></li>
+            </ul>
+        </h1>
+
+        <nav>
+            <ul>
+                <li><a href="../Section/HTML/General.html">General &nbsp;&nbsp;|</a></li>
+                <li><a href="../Section/HTML/ResidenceArea.html">Residence &nbsp;&nbsp;|</a></li>
+                <li><a href="../Section/HTML/Bridge.html">Bridge &nbsp;&nbsp;|</a></li>
+                <li><a href="../Section/HTML/Tunnel.html">Tunnel &nbsp;&nbsp;|</a></li>
+                <li><a href="../Section/HTML/Intersection.html">Intersection &nbsp;&nbsp;| </a></li>
+                <li><a href="../Section/HTML/Diagram.html"> Diagram &nbsp;&nbsp;| </a></li>
+                <li><a href="../Section/HTML/History.html"> History</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!--웹페이지 중앙부분 -->
+    <div class="content">
+        <!--general css 코드 부분 -->
+        <div class="content_inner">
+            <div class="content_inner_c">
+                <div class="content_inner_1"></div> &nbsp;&nbsp; Railway road
+                <!-- &nbsp;&nbsp; : 공백 2칸 -->
+            </div>
+
+            <div class="content_inner_c">
+                <div>
+                    Good &nbsp;/&nbsp; Normal &nbsp;/&nbsp; Bad state
+                    <img src="../IMG/Green.png" alt="GreenLedIMG"> <!-- 좋음/보통/나쁨 상태 아이콘 -->
+                    <img src="../IMG/Yellow.png" alt="YellowLedIMG">
+                    <img src="../IMG/Red.png" alt="RedLedIMG">
+                </div>
+            </div>
+
+            <!-- 센서 위치 표시 아이콘 -->
+            <div class="content_inner_c">
+                <img id="SensorP" src="../IMG/SensorPointer.png" alt="sensor position"> &nbsp; Sensor (Noise,Vibration)
+            </div>
+        </div>
+
+        <!--파트별 구분 (그레이 아이콘)-->
+        <div class="content_part">
+            <img id="GeneralPart1" src="../IMG/gray.png">
+            <img id="GeneralPart2" src="../IMG/gray.png">
+            <img id="GeneralPart3" src="../IMG/gray.png">
+            <img id="GeneralPart4" src="../IMG/gray.png">
+
+            <div class="sensorname">
+                <div class="sensorname1">A1</div>
+                <div class="sensorname2">A2</div>
+                <div class="sensorname3">A3</div>
+                <div class="sensorname4">A4</div>
+            </div>
+  
+        </div>
+
+        <!-- 철도 모형 구현 -->
+        <div class="train_model">
+            <div class="train_left"> Start </div>   <!-- 좌측 표시 -->
+
+            <div class="train_center">   <!-- 트레인 모형 -->
+                <img id="deer1" src="https://www.animatedimages.org/data/media/1130/animated-deer-image-0043.gif" />
+                <img id="deer2" src="https://www.animatedimages.org/data/media/1130/animated-deer-image-0049.gif" />
+                <img id="city1" src="../IMG/city.png">
+
+                <div class="railroad">
+
+                </div>
+                
+
+
+            <!--             
+                <div class="sensorname_2">
+                    <div class="sensorname5">B4</div>
+                    <div class="sensorname6">B3</div>
+                    <div class="sensorname7">B2</div>
+                    <div class="sensorname8">B1</div>
+                </div> -->
+
+
+            </div>
+
+            <div class="train_right"> Return </div>  <!-- 우측 표시 -->
+    
+
+        </div>
+
+    </div>
+
+
+    <footer id="footer">
+        <div class="copyright">
+            <p> Copyright © 2022 hyedi.3 All rights reserved.</p>
+            <p> BDDB of BigData and DataBase</p>
+        </div>
+
+        <div class="address">
+            <p> 충청북도 충주시 한국교통대 미래융합정보관 206호 연구실 </p>
+        </div>
+    </footer>
+
+    </div>
+</body>
+
+</html>
