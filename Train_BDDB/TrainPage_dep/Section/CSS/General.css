@@ -62,13 +62,13 @@ h4 {
     /*상하 5px, 좌우 0*/
 }
 
-
 /* content part의 전체 margin값 조정*/
 .content_part {
     width: 1560px;
     height: 60px;
     margin: 0;
-    padding: 0px 100px 0 260px;
+    padding: 0px 100px 40px 282px;
+    /*top, right, bottom, left*/
     float: left;
 }
 
@@ -82,541 +82,329 @@ h4 {
 .content_part #GeneralPart1 {
     width: 35px;
     height: 35px;
-    padding: 20px 50px 10px 60px;
-
+    padding: 20px 13px 10px 52px;
+    /*top, right, bottom, left*/
 }
 
 .content_part #GeneralPart2 {
     width: 35px;
     height: 35px;
-    padding: 20px 20px 10px 20px;
-
+    padding: 20px 20px 10px 6px;
+    /*top, right, bottom, left*/
 }
 
 .content_part #GeneralPart3 {
     width: 35px;
     height: 35px;
-    padding: 20px 30px 10px 330px;
-
+    padding: 20px 10px 10px 283px;
+    /*top, right, bottom, left*/
 }
 
 .content_part #GeneralPart4 {
     width: 35px;
     height: 35px;
-    padding: 20px 30px 10px 10px;
-
+    padding: 20px 30px 10px 17px;
+    /*top, right, bottom, left*/
 }
 
+/* ******************************************************************************************************************************* */
+/* content 아래 레이아웃 설정 */
 .train_model {
     width: 100%;
-    height: 500px;
+    height: 340px;
     overflow: hidden;
 }
 
+/* Start - left */
 .train_left {
-    width: 150px;
+    width: 140px;
     float: left;
     height: 500px;
     font-size: 28px;
     color: #fff;
     text-align: center;
     font-weight: bold;
-    margin: 200px 20px;
+    margin: 140px 0px 200px 35px;
     overflow: hidden;
 }
 
+/* Return - right */
 .train_right {
-    width: 150px;
+    width: 140px;
     float: right;
     height: 500px;
     font-size: 28px;
     color: #fff;
     font-weight: bold;
-    margin: 200px 20px;
+    margin: 140px 50px 200px 0px;
     text-align: center;
     overflow: hidden;
 }
 
+/* ******************************************************************************************************************************* */
+/* train_model 중앙부 설정 */
 .train_center {
     width: 1510px;
     float: left;
-    height: 500px;
+    height: 340px;
     margin: 0px 10px;
     overflow: hidden;
 }
 
-.train_center img {
-    height: 500px;
-    margin: 0;
-}
-
-.train_center #deer1 {
-    width: 60px;
-    height: 60px;
-    vertical-align: center;
-    padding: 0px 60px 35px 300px;
-    /*top, right, bottom, left*/
-}
-
-.train_center #deer2 {
-    width: 90px;
-    height: 90px;
-    margin: 0;
-    padding: 0px 120px 10px 10px;
-    /*top, right, bottom, left*/
-}
-
-.train_center #city1 {
-    width: 360px;
-    height: 100px;
-    margin: 0;
-    padding: 0px 20px 10px 430px;
-    /*top, right, bottom, left*/
-}
-
+/* A1 ~ B4 위치를 지정 */
 .sensorname {
-    width: 1560px;
-    height: 60px;
+    width: 1500px;
+    height: 20px;
     margin: 0;
-    padding-top: 30px;
+    padding: 0px 0px 0px 50px;
+    /*top, right, bottom, left*/
     float: left;
 }
 
 .sensorname1 {
     font-size: 18px;
     position: relative;
-    display: inline;   
+    /* relative는 absolute의 부모 요소로 지정*/
+    display: inline;
     /* display inline을 안 할 경우, 기본 display block이 적용되어 글자가 가로 전체를 먹게 되므로, display inline 적용 필수*/
-    margin-top: 30px;
-    padding-left: 167px;
-    color: #95992f;
+    padding-left: 204px;
+    color: #A0A0C8;
     font-weight: bold;
 }
 
 .sensorname2 {
     font-size: 18px;
     position: relative;
+    /* relative는 absolute의 부모 요소로 지정*/
     display: inline;
     /* display inline을 안 할 경우, 기본 display block이 적용되어 글자가 가로 전체를 먹게 되므로, display inline 적용 필수*/
-    padding-left: 281px;
-    color: #95992f;
+    padding-left: 230px;
+    color: #A0A0C8;
     font-weight: bold;
 }
 
 .sensorname3 {
     font-size: 18px;
     position: relative;
+    /* relative는 absolute의 부모 요소로 지정*/
     display: inline;
     /* display inline을 안 할 경우, 기본 display block이 적용되어 글자가 가로 전체를 먹게 되므로, display inline 적용 필수*/
-    padding-left: 565px;
-    color: #95992f;
+    padding-left: 517px;
+    color: #A0A0C8;
     font-weight: bold;
+    z-index: 1;
+    /* z-index는 텍스트나 이미지 위에 이미지를 올릴때 보여지는 순서를 말한다. */
 }
 
 .sensorname4 {
     font-size: 18px;
     position: relative;
+    /* relative는 absolute의 부모 요소로 지정*/
     display: inline;
     /* display inline을 안 할 경우, 기본 display block이 적용되어 글자가 가로 전체를 먹게 되므로, display inline 적용 필수*/
-    padding-left: 250px;
-    color: #95992f;
+    padding-left: 237px;
+    color: #A0A0C8;
     font-weight: bold;
+    z-index: 3;
+    /* z-index는 텍스트나 이미지 위에 이미지를 올릴때 보여지는 순서를 말한다. */
 }
 
-.sensorname_2 {
-    width: 1560px;
-    height: 60px;
+/* A1 ~ B4에 대한 센서 포인터 */
+.sensorPointer {
+    width: 1500px;
+    height: 20px;
     margin: 0;
-    padding-top: 30px;
+    padding: 10px 0px 10px 50px;
+    /*top, right, bottom, left*/
     float: left;
 }
 
-.sensorname5 {
-    font-size: 18px;
-    position: relative;
-    display: inline;   
-    /* display inline을 안 할 경우, 기본 display block이 적용되어 글자가 가로 전체를 먹게 되므로, display inline 적용 필수*/
-    padding-left: 167px;
-    color: #95992f;
-    font-weight: bold;
-}
-
-.sensorname6 {
-    font-size: 18px;
+#SensorP1 {
+    height: 10px;
+    width: 20px;
+    padding: 5px 0;
     position: relative;
     display: inline;
-    /* display inline을 안 할 경우, 기본 display block이 적용되어 글자가 가로 전체를 먹게 되므로, display inline 적용 필수*/
-    padding-left: 282px;
-    color: #95992f;
-    font-weight: bold;
+    padding-left: 204px;
 }
 
-.sensorname7 {
-    font-size: 18px;
+#SensorP2 {
+    height: 10px;
+    width: 20px;
+    padding: 5px 0;
     position: relative;
     display: inline;
-    /* display inline을 안 할 경우, 기본 display block이 적용되어 글자가 가로 전체를 먹게 되므로, display inline 적용 필수*/
-    padding-left: 568px;
-    color: #95992f;
-    font-weight: bold;
+    padding-left: 233px;
 }
 
-.sensorname8 {
-    font-size: 18px;
+#SensorP3 {
+    height: 10px;
+    width: 20px;
+    padding: 5px 0;
     position: relative;
     display: inline;
-    /* display inline을 안 할 경우, 기본 display block이 적용되어 글자가 가로 전체를 먹게 되므로, display inline 적용 필수*/
-    padding-left: 252px;
-    color: #95992f;
-    font-weight: bold;
+    z-index: 2;
+    /* z-index는 텍스트나 이미지 위에 이미지를 올릴때 보여지는 순서를 말한다. */
+    padding-left: 519px;
 }
 
-
-
-
-
-
-
-
-.dt-con {
-    margin-top: -300px;
-    width: 1590px;
-    height: 640px;
-    float: left;
+#SensorP4 {
+    height: 10px;
+    width: 20px;
+    padding: 5px 0;
     position: relative;
+    display: inline;
+    padding-left: 238px;
+    z-index: 4;
+    /* z-index는 텍스트나 이미지 위에 이미지를 올릴때 보여지는 순서를 말한다. */
 }
 
-/* .dt-gui-tcon{
-      overflow: hidden;
-    } */
-.dt-center {
+/* 사슴 이미지 위치 조정 */
+.train_center #deer1 {
     position: absolute;
-    left: 50%;
-    top: 366px;
-    width: 254px;
-    height: 254px;
-    line-height: 254px;
-    text-align: center;
-    /* background: url('imgs/round.png') center no-repeat; */
-    margin-left: -127px;
-    font-size: 24px;
-    font-weight: bold;
-    color: #fff;
+    /* absolute는 원하는 곳에 이미지를 지정할 때 사용된다. */
+    width: 63px;
+    height: 63px;
+    top: 230px;
+    left: 506px;
 }
 
-.dt-con-x {
-    margin-top: 415px;
-    width: 1590px;
-    height: 15px;
-}
-
-.dt-con-x-b {
-    margin-top: 0px;
-    width: 1590px;
-    height: 15px;
-}
-
-.dt-con-x-b .dt-gui-x-left .dt-gui-x-1 {
+/* 사슴 이미지 위치 조정 */
+.train_center #deer2 {
     position: absolute;
-    width: 23px;
-    height: 12px;
-    left: -23px;
-    top: 7px;
-    background: url('imgs/111-b.png') top left no-repeat;
+    /* absolute는 원하는 곳에 이미지를 지정할 때 사용된다. */
+    width: 95px;
+    height: 95px;
+    top: 220px;
+    left: 774px;
 }
 
-.dt-con-x-b .dt-gui-x-left .dt-gui-x-2 {
+/* 도시 이미지 위치 조정 */
+.train_center #city1 {
     position: absolute;
-    width: 35px;
-    height: 12px;
-    left: -35px;
-    top: 7px;
-    /* background: url('imgs/icon555-b.png') top left no-repeat; */
+    /* absolute는 원하는 곳에 이미지를 지정할 때 사용된다. */
+    height: 120px;
+    top: 198px;
+    right: 353px;
 }
 
-.dt-con-x-b .dt-gui-x-right .dt-gui-x-1 {
+.train_center #bridge {
     position: absolute;
-    width: 23px;
-    height: 12px;
-    right: -1px;
-    top: 7px;
-    background: url('imgs/111-b.png') top left no-repeat;
+    /* absolute는 원하는 곳에 이미지를 지정할 때 사용된다. */
+    width: 405px;
+    height: 98px;
+    top: 375px;
+    left: 380px;
+    z-index: 5;
 }
 
-.dt-con-x-b .dt-gui-x-right .dt-gui-x-2 {
+.train_center #tunnel {
     position: absolute;
-    width: 35px;
-    height: 12px;
-    right: -1px;
-    top: 7px;
-    /* background: url('imgs/icon555-b.png') top left no-repeat; */
+    /* absolute는 원하는 곳에 이미지를 지정할 때 사용된다. */
+    width: 372px;
+    height: 42px;
+    top: 447px;
+    right: 358px;
+    z-index: 6;
 }
 
-
-.dt-gui-x-left {
-    width: 656px;
-    height: 15px;
-    float: left;
-    display: flex;
-    margin-left: 30px;
-}
-
-.dt-gui-x {
+/* ******************************************************************************************************************************* */
+/* 철도 레일 및 이미지 배치*/
+.cross_railroad {
+    width: 1500px;
+    height: 200px;
+    display: inline-block;
     position: relative;
+    /* cross_rail 이미지에 대한 relative */
 }
 
-.dt-con-x .dt-gui-x-b {
-    position: absolute;
-    left: 0;
-    bottom: -8px;
-    width: 100%;
-    height: 8px;
-    background: rgb(72, 146, 157);
-}
-
-.dt-gui-x-b1 {
-    background: none !important;
-}
-
-.dt-con-x-b .dt-gui-x-b {
-    position: absolute;
-    left: 0;
-    top: -8px;
-    width: 100%;
-    height: 8px;
-    background: rgb(72, 146, 157);
-}
-
-.dt-gui-x-b img {
-    position: absolute;
-    width: 27px;
-    height: 24px;
-    top: -8px;
-    left: 50%;
-    margin-left: -13px;
-}
-
-.dt-gui-x-right {
-    width: 656px;
-    height: 15px;
-    float: right;
-    display: flex;
-    margin-right: 30px;
-}
-
-/* .dt-con-x-b .dt-gui-cha{
-      position: absolute;
-      width: 370px;
-      height: 290px;
-      background: url('imgs/line3333.png') center no-repeat;
-      left: -1px;
-      bottom: 10px;
-    }
-    .dt-con-x .dt-gui-cha{
-      position: absolute;
-      width: 225px;
-      height: 164px;
-      background: url('imgs/line4444.png') center no-repeat;
-      left: -1px;
-      bottom: -8px;
-      z-index: 10;
-    } */
-
-/* .dt-con-x .dt-gui-cha1{
-      position: absolute;
-      width: 370px;
-      height: 290px;
-      background: url('imgs/line111.png') center no-repeat;
-      right: -1px;
-      top: 10px;
-    }
-    .dt-con-x-b .dt-gui-cha1{
-      position: absolute;
-      width: 225px;
-      height: 164px;
-      background: url('imgs/line2222.png') center no-repeat;
-      right: -1px;
-      top: -8px;
-    } */
-.dt-gui-x-left .dt-gui-x {
-    flex: 1;
-    border-left: 1px solid rgb(72, 146, 157);
-    height: 15px;
-    position: relative;
-}
-
-.dt-gui-x-right .dt-gui-x {
-    flex: 1;
-    border-right: 1px solid rgb(72, 146, 157);
-    height: 15px;
-    position: relative;
-}
-
-.dt-gui-x-right .dt-gui-x-1 {
-    position: absolute;
-    width: 23px;
-    height: 12px;
-    right: -23px;
-    top: -5px;
-    background: url('imgs/111.png') top left no-repeat;
-}
-
-.dt-gui-x-right .dt-gui-x-2 {
-    position: absolute;
-    width: 35px;
-    height: 12px;
-    right: -35px;
-    top: -5px;
-    /* background: url('imgs/icon555.png') top left no-repeat; */
-}
-
-.dt-gui-x-left .dt-gui-x-1 {
-    position: absolute;
-    width: 23px;
-    height: 12px;
-    left: -1px;
-    top: -5px;
-    background: url('imgs/111.png') top left no-repeat;
-}
-
-.dt-gui-x-left .dt-gui-x-2 {
-    position: absolute;
-    width: 35px;
-    height: 12px;
-    left: -1px;
-    top: -5px;
-    /* background: url('imgs/icon555.png') top left no-repeat; */
-}
-
-.dt-gui-left {
-    width: 750px;
-    height: 110px;
+/* 철도 레일 상단 라인  */
+.railroad_left {
+    width: 720px;
+    height: 140px;
     border-top: 8px solid rgb(72, 146, 157);
     border-bottom: 8px solid rgb(72, 146, 157);
-    margin-left: 30px;
+    margin-left: 50px;
     float: left;
-}
-
-.dt-gui-right {
-    float: right;
-    width: 750px;
-    height: 110px;
-    border-top: 8px solid rgb(72, 146, 157);
-    border-bottom: 8px solid rgb(72, 146, 157);
-    margin-right: 30px;
-}
-
-.dt-con-t {
     margin-top: 15px;
 }
 
-.dt-con-t-b {
-    margin-top: 85px;
+/* 철도 레일 하단 라인  */
+.railroad_right {
+    width: 730px;
+    height: 140px;
+    border-top: 8px solid rgb(72, 146, 157);
+    border-bottom: 8px solid rgb(72, 146, 157);
+    float: right;
+    margin-top: 15px;
 }
 
-.dt-gui-t-left {
-    display: flex;
-    width: 656px;
-}
 
-.dt-gui-t-left {
-    display: flex;
-    width: 656px;
-}
-
-.dt-gui-text {
+.rail_position-text {
     font-size: 16px;
     text-align: center;
     color: #fff;
     flex: 1;
 }
 
-
-
-.dt-zhu-2 {
-    margin-top: 8px;
-    width: 85px;
-    height: 8px;
-    float: left;
-    margin-right: 20px;
-    background: #f00;
+.rail_top_left {
+    margin-left: 17px;
+    margin-top: 10px;
 }
 
-.el-table {
-    position: fixed;
-    right: 0px;
-    bottom: 0px;
-    left: 120px;
-    background: #fff;
+.rail_position_left {
+    display: flex;
+    width: 656px;
 }
 
-.el-table__row {
-    width: 100%;
+.rail_bottom_left {
+    margin-left: 17px;
+    margin-top: 130px;
 }
 
-.el-table__row td,
-.el-table__header th {
-    padding: 12px 0;
-    min-width: 0;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    text-overflow: ellipsis;
-    vertical-align: middle;
-    position: relative;
-    text-align: left;
+.rail_top_right {
+    margin-left: 100px;
+    margin-top: 10px;
 }
 
-.el-table__row td {
-    border-bottom: 1px solid #EBEEF5;
-    font-size: 12px;
-    font-family: "\5FAE\8F6F\96C5\9ED1";
-    font-weight: normal;
-    color: #666;
+.rail_position_right {
+    display: flex;
+    width: 656px;
 }
 
-.el-table .cell {
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    white-space: normal;
-    word-break: break-all;
-    line-height: 23px;
+.rail_bottom_right {
+    margin-left: 100px;
+    margin-top: 130px;
 }
 
-.el-table .cell,
-.el-table th div {
-    padding: 0 10px;
-
-    text-overflow: ellipsis;
-    font-size: 12px;
-    font-family: "\5FAE\8F6F\96C5\9ED1";
-    font-weight: normal;
-    color: #666;
-}
-
-table {
-    width: 100%
-}
-
-.container-fluid {
-    margin-top: 230px;
-    align-items: center;
-    background-color: white;
-    display: block;
+/* 교차로 이미지 위치 조정 */
+.rail_center #top_cross {
     position: absolute;
-    justify-content: center;
-    width: 90%;
-    overflow-y: hidden;
-    margin-right: 20px;
-    margin-left: 10px;
+    /* cross_railroad에 대한 relative */
+    width: 130px;
+    height: 95px;
+    top: -20px;
+    left: 725px;
 }
 
+/* 교차로 하단 이미지 위치 조정 */
+.rail_center #down_cross {
+    position: absolute;
+    /* cross_railroad에 대한 relative */
+    width: 130px;
+    height: 95px;
+    top: 120px;
+    left: 725px;
+}
+
+/* ******************************************************************************************************************************* */
+/* 열차 모형 */
 #myContainer {
     width: 1465px;
     height: 50px;
     position: relative;
     margin-left: 160px;
     margin-top: -930px;
-    /* background-color: yellow; */
 }
 
 #myAnimation {
@@ -624,8 +412,6 @@ table {
     width: 200px;
     height: 200px;
     position: absolute;
-    /* background-color: red; */
-    /* background-image: url('https://www.flaticon.com/svg/static/icons/svg/3774/3774275.svg'); */
 }
 
 #myContainer2 {
@@ -634,8 +420,7 @@ table {
     position: relative;
     margin-left: 190px;
     margin-top: 40px;
-    z-index: 0;
-    /* background-color: yellow; */
+    z-index: 7;
 }
 
 #myAnimation2 {
@@ -644,91 +429,56 @@ table {
     width: 200px;
     height: 200px;
     position: absolute;
-    z-index: 0;
-    /* background-color: red; */
-    /* background-image: url('https://www.flaticon.com/svg/static/icons/svg/3774/3774275.svg');  */
+    z-index: 8;
 }
-
-.myrasim {
-    width: 35px;
-    height: 20px;
-}
-
-h3 {
-    color: white;
-
-
-}
-
-.nodesensor {
-    position: absolute;
-    padding-left: 1598px;
-    margin-top: 330px;
-    display: flex;
-    flex-wrap: nowrap;
-}
-
-
-
 
 #secondtrain {
     -webkit-transform: scaleX(-1);
     transform: scaleX(-1);
     position: relative;
     z-index: auto;
-    /* right: -66px; */
-    /*  top: -8px; */
 }
 
-
-#bridge {
-    position: absolute;
-    height: 130px;
-    width: 500px;
-    left: 115px;
-    top: -25px;
-    z-index: 10;
+/* ******************************************************************************************************************************* */
+/* 데이터테이블 */
+.dataTable{
+    width: 100%;
+    height: 450px;
+    overflow: hidden;
+    margin-top: 20px;
 }
 
-#tunnel {
-    height: 60px;
-    width: 400px;
-    position: absolute;
-    right: 195px;
-    top: 2px;
-    z-index: 10000000000;
-}
-
-
-table,
-th,
-td {
-    text-align: center;
-}
-
-table {
-    margin-top: 10px;
-    table-layout: fixed;
-}
-
-
-#top_cross {
-    position: relative;
-    height: 100px;
-    top: -80px;
+.table {
+    width: 1465px;
+    margin-top: 20px;
+    margin-left: auto; 
+    margin-right: auto;
+    background-color: #fff;
+    border : 1px solid #6c85bd;
 
 }
-
-#down_cross {
-    position: absolute;
-    height: 100px;
-    top: 105px;
-    right: 65px;
-
-}
-
 
 .table-color {
     background-color: #4472C4;
     color: white;
+}
+
+.table, tr, td {
+    text-align: center;
+}
+
+/* ******************************************************************************************************************************* */
+/* 위험상황 기준치 */
+.Danger_standard {
+    width: 88%;
+    height: 20px;
+    display: inline-block;
+    position: relative;
+    margin-top: 5px;
+}
+
+.Danger_standard p {
+    color: #fff;
+    font-size: 16px;
+    text-align: right;
 }

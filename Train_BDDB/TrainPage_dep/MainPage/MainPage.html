@@ -8,6 +8,8 @@
 
     <title> Train_BDDB_Main </title>
 
+    <script src="../jquery/jquery-3.6.1.min.js"></script>
+
     <link rel="stylesheet" href="../MainPage/MainPage.css">
     <link rel="stylesheet" href="../Section/CSS/General.css">
 
@@ -65,45 +67,209 @@
             <img id="GeneralPart2" src="../IMG/gray.png">
             <img id="GeneralPart3" src="../IMG/gray.png">
             <img id="GeneralPart4" src="../IMG/gray.png">
-
-            <div class="sensorname">
-                <div class="sensorname1">A1</div>
-                <div class="sensorname2">A2</div>
-                <div class="sensorname3">A3</div>
-                <div class="sensorname4">A4</div>
-            </div>
-  
         </div>
 
         <!-- 철도 모형 구현 -->
         <div class="train_model">
-            <div class="train_left"> Start </div>   <!-- 좌측 표시 -->
+            <!-- 시작 지점 표시 -->
+            <div class="train_left"> Start </div>
 
-            <div class="train_center">   <!-- 트레인 모형 -->
+            <!-- 철도 모형 중앙부 -->
+            <div class="train_center">
+                <!-- 철도 레일 상단 구역 -->
+                <div class="sensorname">
+                    <div class="sensorname1">A1</div>
+                    <div class="sensorname2">A2</div>
+                    <div class="sensorname3">A3</div>
+                    <div class="sensorname4">A4</div>
+                </div>
+
+                <div class="sensorPointer">
+                    <img id="SensorP1" src="../IMG/SensorPointer.png" alt="sensor position">
+                    <img id="SensorP2" src="../IMG/SensorPointer.png" alt="sensor position">
+                    <img id="SensorP3" src="../IMG/SensorPointer.png" alt="sensor position">
+                    <img id="SensorP4" src="../IMG/SensorPointer.png" alt="sensor position">
+                </div>
+
+                <!-- 철도 레일 상단 이미지 배치 -->
                 <img id="deer1" src="https://www.animatedimages.org/data/media/1130/animated-deer-image-0043.gif" />
                 <img id="deer2" src="https://www.animatedimages.org/data/media/1130/animated-deer-image-0049.gif" />
-                <img id="city1" src="../IMG/city.png">
+                <img id="city1" src="../IMG/city3.png">
+                <img id="tunnel" src="../IMG/tunnels.png">
+                <img id="bridge" src="../IMG/bridge.png">
 
-                <div class="railroad">
+                <!-- 철도 레일 및 이미지 배치 -->
+                <div class="cross_railroad">
+                    <!-- 철도 레일 왼쪽 라인 -->
+                    <div class="railroad_left">
+                        <!--철도 레일 왼쪽 위치값 조정 -->
+                        <div class="rail_top_left">
+                            <div class="rail_position_left">
+                                <div class="rail_position-text">09817G</div>
+                                <div class="rail_position-text">09818G</div>
+                                <div class="rail_position-text">09819G</div>
+                                <div class="rail_position-text">09820G</div>
+                                <div class="rail_position-text">09821G</div>
+                            </div>
+                        </div>
 
+                        <div class="rail_bottom_left">
+                            <div class="rail_position_left">
+                                <div class="rail_position-text">09812G</div>
+                                <div class="rail_position-text">09813G</div>
+                                <div class="rail_position-text">09814G</div>
+                                <div class="rail_position-text">09815G</div>
+                                <div class="rail_position-text">09816G</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 철도 레일 오른쪽 라인 -->
+                    <div class="railroad_right">
+                        <!-- 철도 레일 오른쪽 위치값 조정-->
+                        <div class="rail_top_right">
+                            <div class="rail_position_right">
+                                <div class="rail_position-text">09812G</div>
+                                <div class="rail_position-text">09813G</div>
+                                <div class="rail_position-text">09814G</div>
+                                <div class="rail_position-text">09815G</div>
+                                <div class="rail_position-text">09816G</div>
+                            </div>
+                        </div>
+
+                        <div class="rail_bottom_right">
+                            <div class="rail_position_right">
+                                <div class="rail_position-text">09817G</div>
+                                <div class="rail_position-text">09818G</div>
+                                <div class="rail_position-text">09819G</div>
+                                <div class="rail_position-text">09820G</div>
+                                <div class="rail_position-text">09821G</div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- 철도 레일 중앙 이미지 배치 -->
+                    <div class="rail_center">
+                        <img id="top_cross" src="../IMG/top_rail_cross.png">
+                        <img id="down_cross" src="../IMG/top_rail_cross.png">
+                    </div>
                 </div>
-                
 
+                <div class="sensorPointer">
+                    <img id="SensorP1" src="../IMG/SensorPointer.png" alt="sensor position">
+                    <img id="SensorP2" src="../IMG/SensorPointer.png" alt="sensor position">
+                    <img id="SensorP3" src="../IMG/SensorPointer.png" alt="sensor position">
+                    <img id="SensorP4" src="../IMG/SensorPointer.png" alt="sensor position">
+                </div>
 
-            <!--             
-                <div class="sensorname_2">
-                    <div class="sensorname5">B4</div>
-                    <div class="sensorname6">B3</div>
-                    <div class="sensorname7">B2</div>
-                    <div class="sensorname8">B1</div>
-                </div> -->
+                <div class="sensorname">
+                    <div class="sensorname1">B4</div>
+                    <div class="sensorname2">B3</div>
+                    <div class="sensorname3">B2</div>
+                    <div class="sensorname4">B1</div>
+                </div>
 
+                <!-- 열차 모형 -->
+                <div id="myContainer">
+                    <div id="myAnimation">
+                        <img id="secondtrain" src="../IMG/small_train_blue.png" />
+                    </div>
+                </div>
 
+                <div class="myContainer2" id="myContainer2">
+                    <div id="myAnimation2">
+                        <img id="secondtrain" src="../IMG/small_train_blue.png" />
+                    </div>
+                </div>
             </div>
 
-            <div class="train_right"> Return </div>  <!-- 우측 표시 -->
-    
+            <!-- 끝 지점 표시 -->
+            <div class="train_right"> Return </div>
+        </div>
 
+        <!-- 테이블 -->
+        <!-- tr = 행을 나타내는 태그, td = 열을 나타내는 태그-->
+        <div class="dataTable">
+            <table class="table" id="intersection">
+                <tr>
+                    <td colspan="11" height="25" class="table-color">Intersection</td>
+                </tr>
+                <tr>
+                    <!-- rowspan: 합칠 행의 개수, colspan : 합칠 열의 개수, height : 셀 너비 설정 -->
+                    <td rowspan="1" height="25">Index</td>
+                    <td rowspan="2">Section</td>
+                    <td rowspan="3">Vibration</td>
+                    <td rowspan="3">Noise</td>
+                    <td rowpan="3">Dust</td>
+                </tr>
+            </table>
+            <!-- 위험상황 기준치-->
+            <div class="Danger_standard">
+                <p>
+                    Residensial area (Noise: 85dB / Vibration: 90VdB) </br>
+                </p>
+            </div>
+
+            <table class="table" id="ResidentialArea">
+                <tr>
+                    <td colspan="11" height="25" class="table-color">Residential Area</td>
+                </tr>
+                <tr>
+                    <!-- rowspan: 합칠 행의 개수, colspan : 합칠 열의 개수, height : 셀 너비 설정 -->
+                    <td rowspan="1" height="25">Index</td>
+                    <td rowspan="2">Section</td>
+                    <td rowspan="3">Vibration</td>
+                    <td rowspan="3">Noise</td>
+                    <td rowpan="3">Dust</td>
+                </tr>
+            </table>
+            <!-- 위험상황 기준치-->
+            <div class="Danger_standard">
+                <p>
+                    Bridge area (Noise: 75dB / Vibration: 80VdB) </br>
+                </p>
+            </div>
+
+            <table class="table" id="Tunnel">
+                <tr>
+                    <td colspan="11" height="25" class="table-color">Tunnel</td>
+                </tr>
+                <tr>
+                    <!-- rowspan: 합칠 행의 개수, colspan : 합칠 열의 개수, height : 셀 너비 설정 -->
+                    <td rowspan="1" height="25">Index</td>
+                    <td rowspan="2">Section</td>
+                    <td rowspan="3">Vibration</td>
+                    <td rowspan="3">Noise</td>
+                    <td rowpan="3">Dust</td>
+                </tr>
+            </table>
+            <!-- 위험상황 기준치-->
+            <div class="Danger_standard">
+                <p>
+                    Tunnel area (Noise: 75dB / Vibration: 80VdB) </br>
+                </p>
+            </div>
+
+            <table class="table" id="Bridge">
+                <tr>
+                    <td colspan="11" height="25" class="table-color">Bridge</td>
+                </tr>
+                <tr>
+                    <!-- rowspan: 합칠 행의 개수, colspan : 합칠 열의 개수, height : 셀 너비 설정 -->
+                    <td rowspan="1" height="25">Index</td>
+                    <td rowspan="2">Section</td>
+                    <td rowspan="3">Vibration</td>
+                    <td rowspan="3">Noise</td>
+                    <td rowpan="3">Dust</td>
+                </tr>
+            </table>
+            <!-- 위험상황 기준치-->
+            <div class="Danger_standard">
+                <p>
+                    Intersection area (Noise: 75dB / Vibration: 80VdB) </br>
+                </p>
+            </div>
         </div>
 
     </div>
@@ -122,5 +288,6 @@
 
     </div>
 </body>
+
 
 </html>
