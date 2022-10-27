@@ -191,17 +191,22 @@
         <!-- 테이블 -->
         <!-- tr = 행을 나타내는 태그, td = 열을 나타내는 태그-->
         <div class="dataTable">
+            <p>
+                <button onclick="myMove()" class="btn btn-primary" style="margin: 20px 0px 5px 22px; font-size: 40; width: 60px; height: 30px; border-radius: 5px; border-color: #adb5bd;"> Start
+                </button>
+            </p>
+
             <table class="table" id="intersection">
                 <tr>
-                    <td colspan="11" height="25" class="table-color">Intersection</td>
+                    <td colspan="11" height="25" class="table-color">Residensial area</td>
                 </tr>
                 <tr>
                     <!-- rowspan: 합칠 행의 개수, colspan : 합칠 열의 개수, height : 셀 너비 설정 -->
-                    <td rowspan="1" height="25">Index</td>
+                    <td rowspan="2" height="25">Index</td>
                     <td rowspan="2">Section</td>
-                    <td rowspan="3">Vibration</td>
-                    <td rowspan="3">Noise</td>
-                    <td rowpan="3">Dust</td>
+                    <td colspan="3">Vibration</td>
+                    <td colspan="3">Noise</td>
+                    <td colpan="3">Dust</td>
                 </tr>
             </table>
             <!-- 위험상황 기준치-->
@@ -213,15 +218,15 @@
 
             <table class="table" id="ResidentialArea">
                 <tr>
-                    <td colspan="11" height="25" class="table-color">Residential Area</td>
+                    <td colspan="11" height="25" class="table-color">Bridge area</td>
                 </tr>
                 <tr>
                     <!-- rowspan: 합칠 행의 개수, colspan : 합칠 열의 개수, height : 셀 너비 설정 -->
-                    <td rowspan="1" height="25">Index</td>
+                    <td rowspan="2" height="25">Index</td>
                     <td rowspan="2">Section</td>
-                    <td rowspan="3">Vibration</td>
-                    <td rowspan="3">Noise</td>
-                    <td rowpan="3">Dust</td>
+                    <td colspan="3">Vibration</td>
+                    <td colspan="3">Noise</td>
+                    <td colpan="3">Dust</td>
                 </tr>
             </table>
             <!-- 위험상황 기준치-->
@@ -237,11 +242,11 @@
                 </tr>
                 <tr>
                     <!-- rowspan: 합칠 행의 개수, colspan : 합칠 열의 개수, height : 셀 너비 설정 -->
-                    <td rowspan="1" height="25">Index</td>
+                    <td rowspan="2" height="25">Index</td>
                     <td rowspan="2">Section</td>
-                    <td rowspan="3">Vibration</td>
-                    <td rowspan="3">Noise</td>
-                    <td rowpan="3">Dust</td>
+                    <td colspan="3">Vibration</td>
+                    <td colspan="3">Noise</td>
+                    <td colpan="3">Dust</td>
                 </tr>
             </table>
             <!-- 위험상황 기준치-->
@@ -257,17 +262,18 @@
                 </tr>
                 <tr>
                     <!-- rowspan: 합칠 행의 개수, colspan : 합칠 열의 개수, height : 셀 너비 설정 -->
-                    <td rowspan="1" height="25">Index</td>
+                    <td rowspan="2" height="25">Index</td>
                     <td rowspan="2">Section</td>
-                    <td rowspan="3">Vibration</td>
-                    <td rowspan="3">Noise</td>
-                    <td rowpan="3">Dust</td>
+                    <td colspan="3">Vibration</td>
+                    <td colspan="3">Noise</td>
+                    <td colpan="3">Dust</td>
                 </tr>
             </table>
             <!-- 위험상황 기준치-->
             <div class="Danger_standard">
                 <p>
-                    Intersection area (Noise: 75dB / Vibration: 80VdB) </br>
+                    
+                    Bridge area (Noise: 75dB / Vibration: 80VdB) </br>
                 </p>
             </div>
         </div>

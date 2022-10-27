@@ -441,20 +441,27 @@ h4 {
 
 /* ******************************************************************************************************************************* */
 /* 데이터테이블 */
-.dataTable{
-    width: 100%;
-    height: 450px;
-    overflow: hidden;
-    margin-top: 20px;
+.dataTable {
+    width: 76%;
+    height: 480px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    align-items: center;
+    background-color: white;
+    display: block;
+    justify-content: center; 
+    overflow-y: hidden;
+
 }
 
 .table {
-    width: 1465px;
+    width: 1415px;
     margin-top: 20px;
-    margin-left: auto; 
+    margin-left: auto;
     margin-right: auto;
     background-color: #fff;
-    border : 1px solid #6c85bd;
+    border: 1px solid #6c85bd;
 
 }
 
@@ -463,7 +470,9 @@ h4 {
     color: white;
 }
 
-.table, tr, td {
+.table,
+tr,
+td {
     text-align: center;
 }
 
@@ -478,7 +487,11 @@ h4 {
 }
 
 .Danger_standard p {
-    color: #fff;
+    width: 1434px;
+    color: #868E96;
+    margin-bottom:10px;
+    margin-right: 0px;
     font-size: 16px;
     text-align: right;
+
 }
