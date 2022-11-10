@@ -26,7 +26,7 @@
 
         <nav>
             <ul>
-                <li><a href="../Section/HTML/General.html">General &nbsp;&nbsp;|</a></li>
+                <li><a href="../../MainPage/MainPage.html">General &nbsp;&nbsp;|</a></li>
                 <li><a href="../Section/HTML/ResidenceArea.html">Residence &nbsp;&nbsp;|</a></li>
                 <li><a href="../Section/HTML/Bridge.html">Bridge &nbsp;&nbsp;|</a></li>
                 <li><a href="../Section/HTML/Tunnel.html">Tunnel &nbsp;&nbsp;|</a></li>
@@ -89,6 +89,19 @@
                     <img id="SensorP2" src="../IMG/SensorPointer.png" alt="sensor position">
                     <img id="SensorP3" src="../IMG/SensorPointer.png" alt="sensor position">
                     <img id="SensorP4" src="../IMG/SensorPointer.png" alt="sensor position">
+                </div>
+
+                <!-- 열차 모형 js-->
+                <div id="myContainer">
+                    <div id="myAnimation">
+                        <img id="firsttrain" src="../IMG/small_train_blue.png" />
+                    </div>
+                </div>
+
+                <div class="myContainer2" id="myContainer2">
+                    <div id="myAnimation2">
+                        <img id="secondtrain" src="../IMG/small_train_blue.png" />
+                    </div>
                 </div>
 
                 <!-- 철도 레일 상단 이미지 배치 -->
@@ -170,18 +183,6 @@
                     <div class="sensorname4">B1</div>
                 </div>
 
-                <!-- 열차 모형 -->
-                <div id="myContainer">
-                    <div id="myAnimation">
-                        <img id="secondtrain" src="../IMG/small_train_blue.png" />
-                    </div>
-                </div>
-
-                <div class="myContainer2" id="myContainer2">
-                    <div id="myAnimation2">
-                        <img id="secondtrain" src="../IMG/small_train_blue.png" />
-                    </div>
-                </div>
             </div>
 
             <!-- 끝 지점 표시 -->
@@ -192,11 +193,13 @@
         <!-- tr = 행을 나타내는 태그, td = 열을 나타내는 태그-->
         <div class="dataTable">
             <p>
-                <button onclick="myMove()" class="btn btn-primary" style="margin: 20px 0px 5px 22px; font-size: 40; width: 60px; height: 30px; border-radius: 5px; border-color: #adb5bd;"> Start
+                <button onclick="myMove()" class="btn btn-primary"
+                    style="margin: 20px 0px 5px 22px; font-size: 40; width: 60px; height: 30px; border-radius: 5px; border-color: #adb5bd;">
+                    Start
                 </button>
             </p>
 
-            <table class="table" id="intersection">
+            <table class="table" id="ResidentialArea">
                 <tr>
                     <td colspan="11" height="25" class="table-color">Residensial area</td>
                 </tr>
@@ -216,9 +219,9 @@
                 </p>
             </div>
 
-            <table class="table" id="ResidentialArea">
+            <table class="table" id="Intersection">
                 <tr>
-                    <td colspan="11" height="25" class="table-color">Bridge area</td>
+                    <td colspan="11" height="25" class="table-color">Intersection</td>
                 </tr>
                 <tr>
                     <!-- rowspan: 합칠 행의 개수, colspan : 합칠 열의 개수, height : 셀 너비 설정 -->
@@ -232,7 +235,7 @@
             <!-- 위험상황 기준치-->
             <div class="Danger_standard">
                 <p>
-                    Bridge area (Noise: 75dB / Vibration: 80VdB) </br>
+                    Intersection (Noise: 75dB / Vibration: 80VdB) </br>
                 </p>
             </div>
 
@@ -252,7 +255,7 @@
             <!-- 위험상황 기준치-->
             <div class="Danger_standard">
                 <p>
-                    Tunnel area (Noise: 75dB / Vibration: 80VdB) </br>
+                    Tunnel (Noise: 75dB / Vibration: 80VdB) </br>
                 </p>
             </div>
 
@@ -272,14 +275,12 @@
             <!-- 위험상황 기준치-->
             <div class="Danger_standard">
                 <p>
-                    
-                    Bridge area (Noise: 75dB / Vibration: 80VdB) </br>
+                    Bridge (Noise: 75dB / Vibration: 80VdB) </br>
                 </p>
             </div>
         </div>
 
     </div>
-
 
     <footer id="footer">
         <div class="copyright">
@@ -294,6 +295,8 @@
 
     </div>
 </body>
-
+<script src="../js_section/general.js"></script>
+<script src="../js/common.js"></script>
+<script src="../js/index.js"></script>
 
 </html>
