@@ -6,9 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title> Intersection </title>
+    <title> Train_BDDB_Main </title>
 
-    <script src="../jquery/jquery-3.6.1.min.js"></script>
+    <script src="../../jquery/jquery-3.6.1.min.js"></script>
 
     <link rel="stylesheet" href="../../MainPage/MainPage.css">
     <link rel="stylesheet" href="../../Section/CSS/Intersection.css">
@@ -20,19 +20,20 @@
     <header id="intro">
         <h1>
             <ul>
-                <li><a href="../../Section/HTML/Intersection.html"> INTERSECTION </a></li>
+                <li><a href="../../MainPage/MainPage.html"> BDDB (Virtual) </a></li>
+                <li><a href="../../MainPage/MainPage.html"> BDDB (Real) </a></li>
             </ul>
         </h1>
 
         <nav>
             <ul>
-                <li><a href="../../MainPage/MainPage.html">General &nbsp;&nbsp;|</a></li>
-                <li><a href="../Section/HTML/ResidenceArea.html">Residence &nbsp;&nbsp;|</a></li>
-                <li><a href="../Section/HTML/Bridge.html">Bridge &nbsp;&nbsp;|</a></li>
-                <li><a href="../Section/HTML/Tunnel.html">Tunnel &nbsp;&nbsp;|</a></li>
-                <li><a href="../Section/HTML/Intersection.html">Intersection &nbsp;&nbsp;| </a></li>
-                <li><a href="../Section/HTML/Diagram.html"> Diagram &nbsp;&nbsp;| </a></li>
-                <li><a href="../Section/HTML/History.html"> History</a></li>
+                <li><a href="../HTML/General.html">General</a></li>
+                <li><a href="../HTML/ResidenceArea.html">Residence</a></li>
+                <li><a href="../HTML/Bridge.html">Bridge</a></li>
+                <li><a href="../HTML/Tunnel.html">Tunnel</a></li>
+                <li><a href="../HTML/Intersection.html">Intersection</a></li>
+                <li><a href="../HTML/Diagram.html"> Diagram</a></li>
+                <li><a href="../HTML/History.html"> History</a></li>
             </ul>
         </nav>
     </header>
@@ -105,8 +106,14 @@
                 </div>
 
                 <!-- 철도 레일 상단 이미지 배치 -->
-                <img id="deer1" src="https://www.animatedimages.org/data/media/1130/animated-deer-image-0043.gif" />
-                <img id="deer2" src="https://www.animatedimages.org/data/media/1130/animated-deer-image-0049.gif" />
+                <img id="car1" src="../../IMG/car1.png" />
+                <img id="person1" src="../../IMG/person1.png" />
+                <img id="city1" src="../../IMG/city3.png">
+                <img id="car2" src="../../IMG/car1.png" />
+                <img id="person2" src="../../IMG/person1.png" />
+                <img id="city2" src="../../IMG/city3.png">
+
+                
 
                 <!-- 철도 레일 및 이미지 배치 -->
                 <div class="cross_railroad">
@@ -196,17 +203,31 @@
                 </button>
             </p>
 
-            <table class="table" id="Intersection">
+            <table class="table" id="Accident">
                 <tr>
-                    <td colspan="11" height="25" class="table-color">Intersection</td>
+                    <td colspan="12" height="21" class="table-color">Accident</td>
                 </tr>
                 <tr>
-                    <!-- rowspan: 합칠 행의 개수, colspan : 합칠 열의 개수, height : 셀 너비 설정 -->
-                    <td rowspan="2" height="25">Index</td>
-                    <td rowspan="2">Section</td>
-                    <td colspan="3">Vibration</td>
-                    <td colspan="3">Noise</td>
-                    <td colpan="3">Dust</td>
+                    <th rowspan="2">ID</th>
+                    <th rowspan="2">Sensor ID</th>
+                    <th rowspan="2">Time Stamp </th>
+                    <th colspan="3">Noise (dB)</th>
+                    <th colspan="3">Vibration (VdB)</th>
+                    <th colspan="3">Vehicle and Pedestrian</th>
+                </tr>
+
+                <tr>
+                    <th>N1(100m)</th>
+                    <th>N2(300m)</th>
+                    <th>N3(500m)</th>
+
+                    <th>V1(100m)</th>
+                    <th>V2(300m)</th>
+                    <th>V3(500m)</th>
+
+                    <th>sense(100m)</th>
+                    <th>sense(300m)</th>
+                    <th>sense(500m)</th>
                 </tr>
             </table>
             <!-- 위험상황 기준치-->
@@ -215,8 +236,112 @@
                     Intersection (Noise: 75dB / Vibration: 80VdB) </br>
                 </p>
             </div>
-        </div>
 
+            <table class="table" id="ResidensialArea">
+                <tr>
+                    <td colspan="12" height="21" class="table-color">Residensial Area</td>
+                </tr>
+                <tr>
+                    <th rowspan="2">ID</th>
+                    <th rowspan="2">Sensor ID</th>
+                    <th rowspan="2">Time Stamp </th>
+                    <th colspan="3">Noise (dB)</th>
+                    <th colspan="3">Vibration (VdB)</th>
+                    <th colspan="3">civil complaint</th>
+                </tr>
+
+                <tr>
+                    <th>N1(100m)</th>
+                    <th>N2(300m)</th>
+                    <th>N3(500m)</th>
+
+                    <th>V1(100m)</th>
+                    <th>V2(300m)</th>
+                    <th>V3(500m)</th>
+
+                    <th>sense(100m)</th>
+                    <th>sense(300m)</th>
+                    <th>sense(500m)</th>
+                </tr>
+
+            </table>
+            <!-- 위험상황 기준치-->
+            <div class="Danger_standard">
+                <p>
+                    Residensial area (Noise: 85dB / Vibration: 90VdB) </br>
+                </p>
+            </div>
+
+            <table class="table" id="Accident2">
+                <tr>
+                    <td colspan="12" height="21" class="table-color">Accident2</td>
+                </tr>
+                <tr>
+                    <!-- rowspan: 합칠 행의 개수, colspan : 합칠 열의 개수, height : 셀 너비 설정 -->
+                    <th rowspan="2">ID</th>
+                    <th rowspan="2">Sensor ID</th>
+                    <th rowspan="2">Time Stamp </th>
+                    <th colspan="3">Noise (dB)</th>
+                    <th colspan="3">Vibration (VdB)</th>
+                    <th colspan="3">Vehicle and Pedestrian</th>
+                </tr>
+
+                <tr>
+                    <th>N1(100m)</th>
+                    <th>N2(300m)</th>
+                    <th>N3(500m)</th>
+
+                    <th>V1(100m)</th>
+                    <th>V2(300m)</th>
+                    <th>V3(500m)</th>
+
+                    <th>sense(100m)</th>
+                    <th>sense(300m)</th>
+                    <th>sense(500m)</th>
+                </tr>
+            </table>
+            <!-- 위험상황 기준치-->
+            <div class="Danger_standard">
+                <p>
+                    Tunnel (Noise: 75dB / Vibration: 80VdB) </br>
+                </p>
+            </div>
+
+            <table class="table" id="ResidensialArea2">
+                <tr>
+                    <td colspan="12" height="21" class="table-color">ResidensialArea2</td>
+                </tr>
+                <tr>
+                    <!-- rowspan: 합칠 행의 개수, colspan : 합칠 열의 개수, height : 셀 너비 설정 -->
+                    <th rowspan="2">ID</th>
+                    <th rowspan="2">Sensor ID</th>
+                    <th rowspan="2">Time Stamp </th>
+                    <th colspan="3">Noise (dB)</th>
+                    <th colspan="3">Vibration (VdB)</th>
+                    <th colspan="3">civil complaint</th>
+                </tr>
+
+                <tr>
+                    <th>N1(100m)</th>
+                    <th>N2(300m)</th>
+                    <th>N3(500m)</th>
+
+                    <th>V1(100m)</th>
+                    <th>V2(300m)</th>
+                    <th>V3(500m)</th>
+
+                    <th>sense(100m)</th>
+                    <th>sense(300m)</th>
+                    <th>sense(500m)</th>
+                </tr>
+            </table>
+            <!-- 위험상황 기준치-->
+            <div class="Danger_standard">
+                <p>
+                    Bridge (Noise: 75dB / Vibration: 80VdB) </br>
+                </p>
+            </div>
+        </div>
     </div>
 
     <footer id="footer">
@@ -232,7 +357,7 @@
 
     </div>
 </body>
-<script src="../../js_section/general.js"></script>
+<script src="../../js_section/Intersection.js"></script>
 <script src="../../js/common.js"></script>
 <script src="../../js/index.js"></script>
 

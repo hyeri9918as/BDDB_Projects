@@ -40,10 +40,10 @@ function myTrain2() {
   function frame() {
     if (pos2 == -1720) {
       clearInterval(id2);
-      document.getElementById("GeneralPart1").src = '../../IMG/gray.png'
-      document.getElementById("GeneralPart2").src = '../../IMG/gray.png'
-      document.getElementById("GeneralPart3").src = '../../IMG/gray.png'
-      document.getElementById("GeneralPart4").src = '../../IMG/gray.png'
+      document.getElementById("GeneralPart1").src = '../IMG/gray.png'
+      document.getElementById("GeneralPart2").src = '../IMG/gray.png'
+      document.getElementById("GeneralPart3").src = '../IMG/gray.png'
+      document.getElementById("GeneralPart4").src = '../IMG/gray.png'
       pos2 = 0;
       elem.style.left = 0 + 'px';
       elem2.style.left = 0 + 'px';
@@ -125,7 +125,7 @@ function intersection() {
     cell11.innerHTML = "<span style='color: red;'> Detected </span>";
     cell12.innerHTML = "<span style='color: red;'> Detected </span>";
 
-    pic = "../../IMG/Red.png";
+    pic = "../IMG/Red.png";
   } else
     if (pos == 450) {
       cell2.innerHTML = sensorName2;
@@ -133,7 +133,7 @@ function intersection() {
       cell11.innerHTML = "<span style='color: green;'> UnDetected </span>";
       cell12.innerHTML = "<span style='color: green;'> UnDetected </span>";
 
-      pic = "../../IMG/Green.png";
+      pic = "../IMG/Green.png";
     }
 
   if (pos == 210) {
@@ -201,14 +201,14 @@ function residentialarea() {
     cell10.innerHTML = "<span style='color: green;'> clear </span>";
     cell11.innerHTML = "<span style='color: green;'> clear </span>";
     cell12.innerHTML = "<span style='color: green;'> clear </span>";
-    pic = "../../IMG/Green.png";
+    pic = "../IMG/Green.png";
 
   } else if (pos == 1150) {
     cell2.innerHTML = sensorName4;
     cell10.innerHTML = "<span style='color: red;'> Unclear </span>";
     cell11.innerHTML = "<span style='color: red;'> Unclear </span>";
     cell12.innerHTML = "<span style='color: red;'> Unclear </span>";
-    pic = "../../IMG/Red.png";
+    pic = "../IMG/Red.png";
 
   }
 
@@ -275,14 +275,14 @@ function tunnel() {
     cell10.innerHTML = "<span style='color: red;'> Detected </span>";
     cell11.innerHTML = "<span style='color: red;'> Detected </span>";
     cell12.innerHTML = "<span style='color: red;'> Detected </span>";
-    pic = "../../IMG/Red.png";
+    pic = "../IMG/Red.png";
   } else
     if (pos2 == -710) {
       cell2.innerHTML = sensorName6;
       cell10.innerHTML = "<span style='color: green;'> UnDetected </span>";
       cell11.innerHTML = "<span style='color: green;'> UnDetected </span>";
       cell12.innerHTML = "<span style='color: green;'> UnDetected </span>";
-      pic = "../../IMG/Green.png";
+      pic = "../IMG/Green.png";
     }
 
 
@@ -350,14 +350,14 @@ function bridge() {
     cell10.innerHTML = "<span style='color: red;'> Detected </span>";
     cell11.innerHTML = "<span style='color: red;'> Detected </span>";
     cell12.innerHTML = "<span style='color: red;'> Detected </span>";
-    pic = "../../IMG/Red.png";
+    pic = "../IMG/Red.png";
   } else
     if (pos2 == -1550) {
       cell2.innerHTML = sensorName8;
       cell10.innerHTML = "<span style='color: green;'> UnDetected </span>";
       cell11.innerHTML = "<span style='color: green;'> UnDetected </span>";
       cell12.innerHTML = "<span style='color: green;'> UnDetected </span>";
-      pic = "../../IMG/Green.png";
+      pic = "../IMG/Green.png";
     }
 
   if (pos2 == -1250) {

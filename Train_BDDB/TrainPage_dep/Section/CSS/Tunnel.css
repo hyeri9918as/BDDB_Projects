@@ -280,33 +280,47 @@ h4 {
 }
 
 /* 도시 이미지 위치 조정 */
-.train_center #city1 {
+.train_center #tunnel {
     position: absolute;
     /* absolute는 원하는 곳에 이미지를 지정할 때 사용된다. */
-    height: 120px;
-    top: 198px;
-    right: 353px;
+    width: 380px;
+    height: 88px;
+    top: 237px;
+    right: 343px;
+    z-index: 5;
 }
 
-.train_center #bridge {
+/* 사슴 이미지 위치 조정 */
+.train_center #deer3 {
     position: absolute;
     /* absolute는 원하는 곳에 이미지를 지정할 때 사용된다. */
-    width: 390px;
-    height: 98px;
-    top: 375px;
+    width: 63px;
+    height: 63px;
+    top: 370px;
+    right: 630px;
+}
+
+/* 사슴 이미지 위치 조정 */
+.train_center #deer4 {
+    position: absolute;
+    /* absolute는 원하는 곳에 이미지를 지정할 때 사용된다. */
+    width: 95px;
+    height: 95px;
+    top: 365px;
+    right: 340px;
+}
+
+
+.train_center #tunnel2 {
+    position: absolute;
+    /* absolute는 원하는 곳에 이미지를 지정할 때 사용된다. */
+    width: 380px;
+    height: 88px;
+    top: 387px;
     left: 380px;
     z-index: 9;
 }
 
-.train_center #tunnel {
-    position: absolute;
-    /* absolute는 원하는 곳에 이미지를 지정할 때 사용된다. */
-    width: 372px;
-    height: 75px;
-    top: 400px;
-    right: 358px;
-    z-index: 8;
-}
 
 /* ******************************************************************************************************************************* */
 /* 철도 레일 및 이미지 배치*/
@@ -377,25 +391,6 @@ h4 {
     margin-top: 130px;
 }
 
-/* 교차로 이미지 위치 조정 */
-.rail_center #top_cross {
-    position: absolute;
-    /* cross_railroad에 대한 relative */
-    width: 130px;
-    height: 95px;
-    top: -20px;
-    left: 725px;
-}
-
-/* 교차로 하단 이미지 위치 조정 */
-.rail_center #down_cross {
-    position: absolute;
-    /* cross_railroad에 대한 relative */
-    width: 130px;
-    height: 95px;
-    top: 120px;
-    left: 725px;
-}
 
 /* ******************************************************************************************************************************* */
 /* 열차 모형 */

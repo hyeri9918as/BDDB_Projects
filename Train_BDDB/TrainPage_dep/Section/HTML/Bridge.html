@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title> Train_BDDB_Main </title>
+
+    <script src="../../jquery/jquery-3.6.1.min.js"></script>
+
+    <link rel="stylesheet" href="../../MainPage/MainPage.css">
+    <link rel="stylesheet" href="../../Section/CSS/Bridge.css">
+
+</head>
+
+<body>
+    <!-- header -->
+    <header id="intro">
+        <h1>
+            <ul>
+                <li><a href="../../MainPage/MainPage.html"> BDDB (Virtual) </a></li>
+                <li><a href="../../MainPage/MainPage.html"> BDDB (Real) </a></li>
+            </ul>
+        </h1>
+
+        <nav>
+            <ul>
+                <li><a href="../HTML/General.html">General</a></li>
+                <li><a href="../HTML/ResidenceArea.html">Residence</a></li>
+                <li><a href="../HTML/Bridge.html">Bridge</a></li>
+                <li><a href="../HTML/Tunnel.html">Tunnel</a></li>
+                <li><a href="../HTML/Intersection.html">Intersection</a></li>
+                <li><a href="../HTML/Diagram.html"> Diagram</a></li>
+                <li><a href="../HTML/History.html"> History</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!--웹페이지 중앙부분 -->
+    <div class="content">
+        <!--general css 코드 부분 -->
+        <div class="content_inner">
+            <div class="content_inner_c">
+                <div class="content_inner_1"></div> &nbsp;&nbsp; Railway road
+                <!-- &nbsp;&nbsp; : 공백 2칸 -->
+            </div>
+
+            <div class="content_inner_c">
+                <div>
+                    Good &nbsp;/&nbsp; Normal &nbsp;/&nbsp; Bad state
+                    <img src="../../IMG/Green.png" alt="GreenLedIMG"> <!-- 좋음/보통/나쁨 상태 아이콘 -->
+                    <img src="../../IMG/Yellow.png" alt="YellowLedIMG">
+                    <img src="../../IMG/Red.png" alt="RedLedIMG">
+                </div>
+            </div>
+
+            <!-- 센서 위치 표시 아이콘 -->
+            <div class="content_inner_c">
+                <img id="SensorP" src="../../IMG/SensorPointer.png" alt="sensor position"> &nbsp; Sensor (Noise,Vibration)
+            </div>
+        </div>
+
+        <!--파트별 구분 (그레이 아이콘)-->
+        <div class="content_part">
+            <img id="GeneralPart1" src="../../IMG/gray.png">
+            <img id="GeneralPart2" src="../../IMG/gray.png">
+            <img id="GeneralPart3" src="../../IMG/gray.png">
+            <img id="GeneralPart4" src="../../IMG/gray.png">
+        </div>
+
+        <!-- 철도 모형 구현 -->
+        <div class="train_model">
+            <!-- 시작 지점 표시 -->
+            <div class="train_left"> Start </div>
+
+            <!-- 철도 모형 중앙부 -->
+            <div class="train_center">
+                <!-- 철도 레일 상단 구역 -->
+                <div class="sensorname">
+                    <div class="sensorname1">A1</div>
+                    <div class="sensorname2">A2</div>
+                    <div class="sensorname3">A3</div>
+                    <div class="sensorname4">A4</div>
+                </div>
+
+                <div class="sensorPointer">
+                    <img id="SensorP1" src="../../IMG/SensorPointer.png" alt="sensor position">
+                    <img id="SensorP2" src="../../IMG/SensorPointer.png" alt="sensor position">
+                    <img id="SensorP3" src="../../IMG/SensorPointer.png" alt="sensor position">
+                    <img id="SensorP4" src="../../IMG/SensorPointer.png" alt="sensor position">
+                </div>
+
+                <!-- 열차 모형 js-->
+                <div id="myContainer">
+                    <div id="myAnimation">
+                        <img id="firsttrain" src="../../IMG/small_train_blue.png" />
+                    </div>
+                </div>
+
+                <div class="myContainer2" id="myContainer2">
+                    <div id="myAnimation2">
+                        <img id="secondtrain" src="../../IMG/small_train_blue.png" />
+                    </div>
+                </div>
+
+                <!-- 철도 레일 상단 이미지 배치 -->
+                <img id="deer1" src="https://www.animatedimages.org/data/media/1130/animated-deer-image-0043.gif" />
+                <img id="deer2" src="https://www.animatedimages.org/data/media/1130/animated-deer-image-0049.gif" />
+                <img id="bridge" src="../../IMG/bridge2.png">
+                <img id="bridge2" src="../../IMG/bridge2.png">
+                <img id="deer3" src="https://www.animatedimages.org/data/media/1130/animated-deer-image-0043.gif" />
+                <img id="deer4" src="https://www.animatedimages.org/data/media/1130/animated-deer-image-0049.gif" />
+
+                <!-- 철도 레일 및 이미지 배치 -->
+                <div class="cross_railroad">
+                    <!-- 철도 레일 왼쪽 라인 -->
+                    <div class="railroad_left">
+                        <!--철도 레일 왼쪽 위치값 조정 -->
+                        <div class="rail_top_left">
+                            <div class="rail_position_left">
+                                <div class="rail_position-text">09817G</div>
+                                <div class="rail_position-text">09818G</div>
+                                <div class="rail_position-text">09819G</div>
+                                <div class="rail_position-text">09820G</div>
+                                <div class="rail_position-text">09821G</div>
+                            </div>
+                        </div>
+
+                        <div class="rail_bottom_left">
+                            <div class="rail_position_left">
+                                <div class="rail_position-text">09812G</div>
+                                <div class="rail_position-text">09813G</div>
+                                <div class="rail_position-text">09814G</div>
+                                <div class="rail_position-text">09815G</div>
+                                <div class="rail_position-text">09816G</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 철도 레일 오른쪽 라인 -->
+                    <div class="railroad_right">
+                        <!-- 철도 레일 오른쪽 위치값 조정-->
+                        <div class="rail_top_right">
+                            <div class="rail_position_right">
+                                <div class="rail_position-text">09812G</div>
+                                <div class="rail_position-text">09813G</div>
+                                <div class="rail_position-text">09814G</div>
+                                <div class="rail_position-text">09815G</div>
+                                <div class="rail_position-text">09816G</div>
+                            </div>
+                        </div>
+
+                        <div class="rail_bottom_right">
+                            <div class="rail_position_right">
+                                <div class="rail_position-text">09817G</div>
+                                <div class="rail_position-text">09818G</div>
+                                <div class="rail_position-text">09819G</div>
+                                <div class="rail_position-text">09820G</div>
+                                <div class="rail_position-text">09821G</div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="sensorPointer">
+                    <img id="SensorP1" src="../../IMG/SensorPointer.png" alt="sensor position">
+                    <img id="SensorP2" src="../../IMG/SensorPointer.png" alt="sensor position">
+                    <img id="SensorP3" src="../../IMG/SensorPointer.png" alt="sensor position">
+                    <img id="SensorP4" src="../../IMG/SensorPointer.png" alt="sensor position">
+                </div>
+
+                <div class="sensorname">
+                    <div class="sensorname1">B4</div>
+                    <div class="sensorname2">B3</div>
+                    <div class="sensorname3">B2</div>
+                    <div class="sensorname4">B1</div>
+                </div>
+
+            </div>
+
+            <!-- 끝 지점 표시 -->
+            <div class="train_right"> Return </div>
+        </div>
+
+        <!-- 테이블 -->
+        <!-- tr = 행을 나타내는 태그, td = 열을 나타내는 태그-->
+        <div class="dataTable">
+            <p>
+                <button onclick="myMove()" class="btn btn-primary"
+                    style="margin: 20px 0px 5px 22px; font-size: 40; width: 60px; height: 30px; border-radius: 5px; border-color: #adb5bd;">
+                    Start
+                </button>
+            </p>
+
+            <table class="table" id="AnimalHabitat">  <!-- AnimalHabitat : 야생 동물 출몰 지역 -->
+                <tr>
+                    <td colspan="12" height="21" class="table-color">Animal Habitat</td>
+                </tr>
+                <tr>
+                    <th rowspan="2">ID</th>
+                    <th rowspan="2">Sensor ID</th>
+                    <th rowspan="2">Time Stamp </th>
+                    <th colspan="3">Noise (dB)</th>
+                    <th colspan="3">Vibration (VdB)</th>
+                    <th colspan="3">Animal Appearance</th>
+                </tr>
+
+                <tr>
+                    <th>N1(100m)</th>
+                    <th>N2(300m)</th>
+                    <th>N3(500m)</th>
+
+                    <th>V1(100m)</th>
+                    <th>V2(300m)</th>
+                    <th>V3(500m)</th>
+
+                    <th>sense(100m)</th>
+                    <th>sense(300m)</th>
+                    <th>sense(500m)</th>
+                </tr>
+            </table>
+            <!-- 위험상황 기준치-->
+            <div class="Danger_standard">
+                <p>
+                    Intersection (Noise: 75dB / Vibration: 80VdB) </br>
+                </p>
+            </div>
+
+            <table class="table" id="Bridge">
+                <tr>
+                    <td colspan="12" height="21" class="table-color">Bridge</td>
+                </tr>
+                <tr>
+                    <th rowspan="2">ID</th>
+                    <th rowspan="2">Sensor ID</th>
+                    <th rowspan="2">Time Stamp </th>
+                    <th colspan="3">Noise (dB)</th>
+                    <th colspan="3">Vibration (VdB)</th>
+                    <th colspan="3">Freezing</th>
+                </tr>
+
+                <tr>
+                    <th>N1(100m)</th>
+                    <th>N2(300m)</th>
+                    <th>N3(500m)</th>
+
+                    <th>V1(100m)</th>
+                    <th>V2(300m)</th>
+                    <th>V3(500m)</th>
+
+                    <th>sense(100m)</th>
+                    <th>sense(300m)</th>
+                    <th>sense(500m)</th>
+                </tr>
+
+            </table>
+            <!-- 위험상황 기준치-->
+            <div class="Danger_standard">
+                <p>
+                    Residensial area (Noise: 85dB / Vibration: 90VdB) </br>
+                </p>
+            </div>
+
+            <table class="table" id="AnimalHabitat2">
+                <tr>
+                    <td colspan="12" height="21" class="table-color">Animal Habitat2</td>
+                </tr>
+                <tr>
+                    <!-- rowspan: 합칠 행의 개수, colspan : 합칠 열의 개수, height : 셀 너비 설정 -->
+                    <th rowspan="2">ID</th>
+                    <th rowspan="2">Sensor ID</th>
+                    <th rowspan="2">Time Stamp </th>
+                    <th colspan="3">Noise (dB)</th>
+                    <th colspan="3">Vibration (VdB)</th>
+                    <th colspan="3">Animal Appearance</th>
+                </tr>
+
+                <tr>
+                    <th>N1(100m)</th>
+                    <th>N2(300m)</th>
+                    <th>N3(500m)</th>
+
+                    <th>V1(100m)</th>
+                    <th>V2(300m)</th>
+                    <th>V3(500m)</th>
+
+                    <th>sense(100m)</th>
+                    <th>sense(300m)</th>
+                    <th>sense(500m)</th>
+                </tr>
+            </table>
+            <!-- 위험상황 기준치-->
+            <div class="Danger_standard">
+                <p>
+                    Tunnel (Noise: 75dB / Vibration: 80VdB) </br>
+                </p>
+            </div>
+
+            <table class="table" id="Bridge2">
+                <tr>
+                    <td colspan="12" height="21" class="table-color">Bridge2</td>
+                </tr>
+                <tr>
+                    <!-- rowspan: 합칠 행의 개수, colspan : 합칠 열의 개수, height : 셀 너비 설정 -->
+                    <th rowspan="2">ID</th>
+                    <th rowspan="2">Sensor ID</th>
+                    <th rowspan="2">Time Stamp </th>
+                    <th colspan="3">Noise (dB)</th>
+                    <th colspan="3">Vibration (VdB)</th>
+                    <th colspan="3">Freezing</th>
+                </tr>
+
+                <tr>
+                    <th>N1(100m)</th>
+                    <th>N2(300m)</th>
+                    <th>N3(500m)</th>
+
+                    <th>V1(100m)</th>
+                    <th>V2(300m)</th>
+                    <th>V3(500m)</th>
+
+                    <th>sense(100m)</th>
+                    <th>sense(300m)</th>
+                    <th>sense(500m)</th>
+                </tr>
+            </table>
+            <!-- 위험상황 기준치-->
+            <div class="Danger_standard">
+                <p>
+                    Bridge (Noise: 75dB / Vibration: 80VdB) </br>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <footer id="footer">
+        <div class="copyright">
+            <p> Copyright © 2022 hyedi.3 All rights reserved.</p>
+            <p> BDDB of BigData and DataBase</p>
+        </div>
+
+        <div class="address">
+            <p> 충청북도 충주시 한국교통대 미래융합정보관 206호 연구실 </p>
+        </div>
+    </footer>
+
+    </div>
+</body>
+<script src="../../js_section/Bridge.js"></script>
+<script src="../../js/common.js"></script>
+<script src="../../js/index.js"></script>
+
+</html>

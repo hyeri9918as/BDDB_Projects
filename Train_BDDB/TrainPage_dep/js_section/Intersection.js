@@ -13,19 +13,19 @@ function myMove() {
     if (pos == 1720) {
       pos = 0;
       clearInterval(id1); // clearIntervar() : setIntervar 함수 반복을 중지(리턴받은 id1 값을 매개변수로 작성)
-      document.getElementById("GeneralPart1").src = '../IMG/gray.png'
-      document.getElementById("GeneralPart2").src = '../IMG/gray.png'
-      document.getElementById("GeneralPart3").src = '../IMG/gray.png'
-      document.getElementById("GeneralPart4").src = '../IMG/gray.png'
+      document.getElementById("GeneralPart1").src = '../../IMG/gray.png'
+      document.getElementById("GeneralPart2").src = '../../IMG/gray.png'
+      document.getElementById("GeneralPart3").src = '../../IMG/gray.png'
+      document.getElementById("GeneralPart4").src = '../../IMG/gray.png'
       myTrain2();
 
     } else {
       if ((pos == 210) || (pos == 450)
       ) {
-        intersection()
+        accident()
       } else {
         if ((pos == 900) || (pos == 1150)) {
-          residentialarea()
+          residensialarea()
         }
       }
 
@@ -51,10 +51,10 @@ function myTrain2() {
 
     } else {
       if ((pos2 == -400) || (pos2 == -710)) {
-        tunnel()
+        accident2()
       } else {
         if ((pos2 == -1250) || (pos2 == -1550)) {
-          bridge()
+          residensialarea2()
         }
       }
       pos2--;
@@ -74,9 +74,9 @@ function random_item(items) {
 }
 
 
-function intersection() {
+function accident() {
 
-  var table = document.getElementById("Intersection");
+  var table = document.getElementById("Accident");
   var row = table.insertRow(-1);
   var cell1 = row.insertCell(0);
   var cell2 = row.insertCell(1);
@@ -95,7 +95,7 @@ function intersection() {
   cell1.innerHTML = id;
   id++;
 
-  var Timestamp = document.getElementById("Intersection");            // 출력할 장소 선택
+  var Timestamp = document.getElementById("Accident");            // 출력할 장소 선택
   var now = new Date();      // 현재시간
   var nowTime = now.getFullYear() + "년" + (now.getMonth()+1) + "월" + now.getDate() + "일" + now.getHours() + "시" + now.getMinutes() + "분" + now.getSeconds() + "초";
 
@@ -141,13 +141,12 @@ function intersection() {
   } else if (pos = 450) {
     document.getElementById('GeneralPart2').src = pic;
   }
-
-
+  
 }
 
 
 // 주거지역 테이블에 데이터 출력 
-function residentialarea() {
+function residensialarea() {
 
   var table = document.getElementById("ResidensialArea");
   var row = table.insertRow(-1);
@@ -198,16 +197,16 @@ function residentialarea() {
 
   if (pos == 900) {
     cell2.innerHTML = sensorName3;
-    cell10.innerHTML = "<span style='color: green;'> clear </span>";
-    cell11.innerHTML = "<span style='color: green;'> clear </span>";
-    cell12.innerHTML = "<span style='color: green;'> clear </span>";
+    cell10.innerHTML = "<span style='color: green;'> UnDetected </span>";
+    cell11.innerHTML = "<span style='color: green;'> UnDetected </span>";
+    cell12.innerHTML = "<span style='color: green;'> UnDetected </span>";
     pic = "../../IMG/Green.png";
 
   } else if (pos == 1150) {
     cell2.innerHTML = sensorName4;
-    cell10.innerHTML = "<span style='color: red;'> Unclear </span>";
-    cell11.innerHTML = "<span style='color: red;'> Unclear </span>";
-    cell12.innerHTML = "<span style='color: red;'> Unclear </span>";
+    cell10.innerHTML = "<span style='color: red;'> Detected </span>";
+    cell11.innerHTML = "<span style='color: red;'> Detected </span>";
+    cell12.innerHTML = "<span style='color: red;'> Detected </span>";
     pic = "../../IMG/Red.png";
 
   }
@@ -220,9 +219,9 @@ function residentialarea() {
 }
 
 
-function tunnel() {
+function accident2() {
 
-  var table = document.getElementById("Tunnel");
+  var table = document.getElementById("Accident2");
   var row = table.insertRow(-1);
   var cell1 = row.insertCell(0);
   var cell2 = row.insertCell(1);
@@ -240,7 +239,7 @@ function tunnel() {
   cell1.innerHTML = id;
   id++;
 
-  var Timestamp = document.getElementById("Tunnel");            // 출력할 장소 선택
+  var Timestamp = document.getElementById("Accident2");            // 출력할 장소 선택
   var now = new Date();      // 현재시간
   var nowTime = now.getFullYear() + "년" + (now.getMonth()+1) + "월" + now.getDate() + "일" + now.getHours() + "시" + now.getMinutes() + "분" + now.getSeconds() + "초";
 
@@ -295,9 +294,9 @@ function tunnel() {
 
 }
 
-function bridge() {
+function residensialarea2() {
 
-  var table = document.getElementById("Bridge");
+  var table = document.getElementById("ResidensialArea2");
   var row = table.insertRow(-1);
   var cell1 = row.insertCell(0);
   var cell2 = row.insertCell(1);
@@ -315,7 +314,7 @@ function bridge() {
   cell1.innerHTML = id;
   id++;
 
-  var Timestamp = document.getElementById("Bridge");            // 출력할 장소 선택
+  var Timestamp = document.getElementById("ResidensialArea2");            // 출력할 장소 선택
   var now = new Date();      // 현재시간
   var nowTime = now.getFullYear() + "년" + (now.getMonth()+1) + "월" + now.getDate() + "일" + now.getHours() + "시" + now.getMinutes() + "분" + now.getSeconds() + "초";
 
