@@ -260,10 +260,10 @@ h4 {
 }
 
 /* 사슴 이미지 위치 조정 */
-.train_center #car1 {
+.train_center #Dust {
     position: absolute;
     /* absolute는 원하는 곳에 이미지를 지정할 때 사용된다. */
-    width: 77px;
+    width: 130px;
     height: 80px;
     top: 230px;
     left: 506px;
@@ -271,12 +271,12 @@ h4 {
 }
 
 /* 사슴 이미지 위치 조정 */
-.train_center #person1 {
+.train_center #Dust2 {
     position: absolute;
     /* absolute는 원하는 곳에 이미지를 지정할 때 사용된다. */
-    width: 70px;
-    height: 70px;
-    top: 225px;
+    width: 130px;
+    height: 80px;
+    top: 230px;
     left: 774px;
     z-index:2;
 }
@@ -292,24 +292,24 @@ h4 {
 }
 
 /* 사슴 이미지 위치 조정 */
-.train_center #car2 {
+.train_center #Dust3 {
     position: absolute;
     /* absolute는 원하는 곳에 이미지를 지정할 때 사용된다. */
-    width: 77px;
+    width: 150px;
     height: 80px;
     top: 385px;
-    right: 642px;
+    right: 590px;
     z-index: 4;
 }
 
 /* 사슴 이미지 위치 조정 */
-.train_center #person2 {
+.train_center #Dust4 {
     position: absolute;
     /* absolute는 원하는 곳에 이미지를 지정할 때 사용된다. */
-    width: 70px;
-    height: 70px;
-    top: 380px;
-    right: 370px;
+    width: 150px;
+    height: 80px;
+    top: 385px;
+    right: 350px;
     z-index: 5;
 }
 
