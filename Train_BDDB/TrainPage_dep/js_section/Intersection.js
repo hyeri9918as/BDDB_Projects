@@ -145,7 +145,7 @@ function accident() {
 }
 
 
-// 주거지역 테이블에 데이터 출력 
+// 건널목 테이블에 데이터 출력 
 function residensialarea() {
 
   var table = document.getElementById("ResidensialArea");

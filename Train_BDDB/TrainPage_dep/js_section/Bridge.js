@@ -145,7 +145,7 @@ function animalHabitat() {
 }
 
 
-// 주거지역 테이블에 데이터 출력 
+// 교량 테이블에 데이터 출력 
 function bridge() {
 
   var table = document.getElementById("Bridge");

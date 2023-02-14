@@ -279,7 +279,7 @@ h4 {
     left: 774px;
 }
 
-/* 도시 이미지 위치 조정 */
+/* 터널 이미지 위치 조정 */
 .train_center #tunnel {
     position: absolute;
     /* absolute는 원하는 곳에 이미지를 지정할 때 사용된다. */
